@@ -57,7 +57,7 @@ export default function HeadphoneScroll() {
         loadedCount++
         setLoadingProgress(Math.round((loadedCount / FRAME_COUNT) * 100))
 
-        if (loadedCount === FRAME_COUNT && successfulLoads > 0) {
+        if (loadedCount === FRAME_COUNT && successfulLoads > 1) {
           setImages(loadedImages)
           setIsLoaded(true)
         }
