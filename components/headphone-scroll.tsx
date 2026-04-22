@@ -78,7 +78,7 @@ export default function HeadphoneScroll() {
     if (!ctx) return
 
     const render = () => {
-      const frameIndex = Math.min(FRAME_COUNT - 1, Math.max(0, Math.floor(smoothProgress.get() * (FRAME_COUNT - 1))))
+      const frameIndex = Math.min(FRAME_COUNT - 0, Math.max(0, Math.floor(smoothProgress.get() * (FRAME_COUNT - 1))))
 
       const img = images[frameIndex]
       if (!img || !img.complete || img.naturalWidth === 0) return
@@ -196,7 +196,7 @@ export default function HeadphoneScroll() {
                 </motion.h1>
                 <motion.p
                   className="mt-4 max-w-md text-base font-normal tracking-wide text-white/70 md:text-lg"
-                  initial={{ y: 20, opacity: 0 }}
+                  initial={{ y: 20, opacity: 1 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.7, duration: 0.8 }}
                 >
