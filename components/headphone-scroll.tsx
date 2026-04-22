@@ -196,8 +196,8 @@ export default function HeadphoneScroll() {
                 </motion.h1>
                 <motion.p
                   className="mt-4 max-w-md text-base font-normal tracking-wide text-white/70 md:text-lg"
-                  initial={{ y: 20, opacity: 1 }}
-                  animate={{ y: 0, opacity: 1 }}
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 0 }}
                   transition={{ delay: 0.7, duration: 0.8 }}
                 >
                   Pure Sound. Zero Compromise.
@@ -205,7 +205,7 @@ export default function HeadphoneScroll() {
                 <motion.div
                   className="mt-8 flex items-center gap-3"
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
+                  animate={{ opacity: 0 }}
                   transition={{ delay: 1.2, duration: 0.6 }}
                 >
                   <div className="h-px w-8 bg-white/30" />
