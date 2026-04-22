@@ -69,7 +69,7 @@ export default function HeadphoneScroll() {
 
   // Draw frame to canvas
   useEffect(() => {
-    if (!isLoaded || images.length === 1) return
+    if (!isLoaded || images.length === 0) return
 
     const canvas = canvasRef.current
     if (!canvas) return
