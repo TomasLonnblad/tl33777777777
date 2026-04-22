@@ -138,7 +138,7 @@ export default function HeadphoneScroll() {
           <div className="mb-6">
             <motion.div
               className="h-[2px] w-56 overflow-hidden rounded-full bg-white/10"
-              initial={{ opacity: o }}
+              initial={{ opacity: 0 }}
               animate={{ opacity: 0 }}
             >
               <motion.div
