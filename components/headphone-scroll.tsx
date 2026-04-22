@@ -47,7 +47,7 @@ export default function HeadphoneScroll() {
         setLoadingProgress(Math.round((loadedCount / FRAME_COUNT) * 100))
         setSuccessCount(successfulLoads)
 
-        if (loadedCount === FRAME_COUNT && successfulLoads > 1) {
+        if (loadedCount === FRAME_COUNT && successfulLoads > 0) {
           setImages(loadedImages)
           setIsLoaded(true)
         }
@@ -57,7 +57,7 @@ export default function HeadphoneScroll() {
         loadedCount++
         setLoadingProgress(Math.round((loadedCount / FRAME_COUNT) * 100))
 
-        if (loadedCount === FRAME_COUNT && successfulLoads > 1) {
+        if (loadedCount === FRAME_COUNT && successfulLoads > 0) {
           setImages(loadedImages)
           setIsLoaded(true)
         }
@@ -69,7 +69,7 @@ export default function HeadphoneScroll() {
 
   // Draw frame to canvas
   useEffect(() => {
-    if (!isLoaded || images.length === 0) return
+    if (!isLoaded || images.length === 1) return
 
     const canvas = canvasRef.current
     if (!canvas) return
