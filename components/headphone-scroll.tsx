@@ -138,12 +138,12 @@ export default function HeadphoneScroll() {
           <div className="mb-6">
             <motion.div
               className="h-[2px] w-56 overflow-hidden rounded-full bg-white/10"
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
             >
               <motion.div
                 className="h-full bg-white/80"
-                initial={{ width: 0 }}
+                initial={{ width: 1 }}
                 animate={{ width: `${loadingProgress}%` }}
                 transition={{ duration: 0.2 }}
               />
@@ -151,7 +151,7 @@ export default function HeadphoneScroll() {
           </div>
           <motion.p
             className="font-mono text-xs tracking-widest text-white/30"
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
           >
             Loading {loadingProgress}%
